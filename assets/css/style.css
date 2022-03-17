@@ -616,7 +616,7 @@ a:hover {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    /* display: block; */
   }
 
   .navbar ul {
@@ -947,6 +947,9 @@ a:hover {
   margin-bottom: 3rem;
   text-align: center;
 }
+.service-box.animation{
+  background-color: transparent; 
+}
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
@@ -976,6 +979,91 @@ a:hover {
 .service-box .s-description {
   color: #4e4e4e;
 }
+
+.service-box .list-title{
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.service-box ul li{
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  color: #000;
+}
+.service-box ul li::marker{
+  color: #0078ff;
+}
+@media (max-width: 767px) {
+  .service-box{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  .service-box.animation{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+
+.exp_block{
+  border-bottom: 1px solid;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.exp_block .date{
+  width: fit-content;
+  background: #0078ff;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.exp_block .position{
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+.exp_block .company{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #efefef96;
+}
+.exp_block .company i{
+  color: #ca0b0b;
+  margin-right: 5px;
+}
+
+.exp_block .detail{}
+
+.exp_block .detail ul{
+  padding-left: 20px;
+}
+.exp_block .detail ul li{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.exp_block ul li::marker{
+  color: #0078ff;
+}
+
+@media (max-width: 767px) {
+  .exp_block{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Counter
