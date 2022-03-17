@@ -455,6 +455,7 @@ a:hover {
   margin-top: 30px;
   padding: 12px 32px;
   border-radius: 30px;
+  font-weight: 500;
 }
 
 .btn_extra:hover{
@@ -788,13 +789,27 @@ a:hover {
 .about-me .title-left{
   color: #fff;
 }
+.about-me .lead{
+  margin-top: -25px;
+  color: #fff;
+  font-size: 18px;
+    font-weight: 400;
+}
 
 .about-me .title-left span{
   color: #0078ff;
 }
-
 .about-me .title-left:before{
   background-color: transparent;
+}
+
+.about-info .title-s{
+  width: 70px;
+  display: inline-block;
+  color: #fff;
+}
+.about-info span{
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -871,8 +886,26 @@ a:hover {
 .edu-box .s-description {
   color: #fff;
 }
+@media (min-width: 768px) {
+  .s-year-start.mobile{
+    display: none;
+  }
+  .s-year.mobile{
+    display: none;
+  }
 
+  .s-year-start, .s-year{
+    color: #0078ff!important;
+    font-weight: 500;
+  }
+}
 @media (max-width: 767px) {
+  .s-year-start.desktop{
+    display: none;
+  }
+  .s-year.desktop{
+    display: none;
+  }
   .edu-block::before{
     position: absolute;
     content: "";
@@ -883,6 +916,23 @@ a:hover {
     height: 20%;
     background: #0078ff;
     z-index: 1;
+  }
+  .s-year-start{
+    color: #0078ff!important;
+    font-weight: 500;
+   }
+  .edu-block .s-year{
+    position: absolute;
+    color: #0078ff;
+    font-weight: 500;
+  }
+  .edu-block .s-year.right{
+    right: 105px;
+    bottom: 5px;
+  }
+  .edu-block .s-year.left{
+    left: 105px;
+    bottom: 5px;
   }
 }
 
@@ -1415,4 +1465,34 @@ footer .credits {
 }
 footer .credits a {
   color: #fff;
+}
+
+.arrow_scrolldown{
+  left: 50%;
+  transform: translateY(0%) rotate(45deg);
+  opacity: 0;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: transparent;
+  z-index: 80;
+  bottom: 25px;
+  position: absolute;
+  border-width: 0 0.25em 0.25em 0;
+  border-style: solid;
+  border-color: #fff;
+  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+}
+@keyframes scrolldown {
+    0%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
+    50%{
+        transform: translateY(0%) rotate(45deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
 }
